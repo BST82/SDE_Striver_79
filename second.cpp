@@ -9,7 +9,7 @@ void sort_0_1_2_array( vector<int>&A, int n )
     {  
         if (A.at(i)== 0 )  
         {  
-            countzero=countzero+1 ;  
+            countzero+=1 ;  
         }  
         else if ( A[i]== 1 )  
         {  
@@ -48,7 +48,7 @@ int main()
    
     cout<<"Array after sorting : " ;  
     sort_0_1_2_array( v,n ) ;  
-    for ( i=0;i<n;i++ )  
+    for (auto &i: v )  
     {  
         cout<<v.at(i)<<" "; 
     }  
