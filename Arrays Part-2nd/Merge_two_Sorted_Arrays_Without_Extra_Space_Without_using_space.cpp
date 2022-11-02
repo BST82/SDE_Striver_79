@@ -11,7 +11,7 @@ for(int i=0;i<n;i++){
         a2[0]=temp;
     }
     int a2_element=a2[0];
-   for(j=1;j<m && j<a2_element;j++){
+   for(j=1;j<m && a2[j]<a2_element;j++){
     a2[j-1]=a2[j];
    }
    a2[j-1]=a2_element;
