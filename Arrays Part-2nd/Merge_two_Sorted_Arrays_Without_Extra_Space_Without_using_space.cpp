@@ -1,25 +1,22 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void merge(int a1[], int a2[], int n, int m) {
-    int a3[n+m];
-    int k = 0;
-    for (int i = 0; i < n; i++) {
-      a3[k++] = a1[i];
-    }
-    for (int i = 0; i < m; i++) {
-      a3[k++] = a2[i];
-    }
-    sort(a3,a3+m+n);
-    k = 0;
-    for (int i = 0; i < n; i++) {
-      a1[i] = a3[k++];
-    }
-    for (int i = 0; i < m; i++) {
-      a2[i] = a3[k++];
-    }
+void merge(int a1[],int a2[],int n, int m){
 
-  }
+int j;
+for(int i=0;i<n;i++){
+    if(a1[i]>a2[0]){
+        int temp=a1[i];
+        a1[i]=a2[0];
+        a2[0]=temp;
+    }
+    int a2_element=a2[0];
+   for(j=1;j<m && j<a2_element;j++){
+    a2[j-1]=a2[j];
+   }
+   a2[j-1]=a2_element;
+}
+}
 int main(){
     cout<<"Enter size of first array1 and array2 : ";
     int n,m;
@@ -47,6 +44,6 @@ int main(){
   }
 }
 
-//Time complexity: O(n*log(n))+O(n)+O(n)
+//Time complexity: O(n*m)
 
-// Space Complexity: O(n) 
+// Space Complexity: O(1) 
