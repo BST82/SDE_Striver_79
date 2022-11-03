@@ -26,3 +26,6 @@ cout<<"Duplicate element : ";
    sorten(v1);
 
 }
+
+//Time Complexity:O(Nlogn + N)
+// Space Complexity:O(1)
