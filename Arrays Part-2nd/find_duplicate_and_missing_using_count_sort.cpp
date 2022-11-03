@@ -40,4 +40,4 @@ int main(){
 
 }
 //Time complexity: O(N) traversed array only once.
-//Space complexity: O(1)
+//Space complexity: O(N)
