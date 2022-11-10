@@ -37,3 +37,6 @@ int main(){
 
     find(a,n);
 }
+
+// TC: O(N*N);
+//SC : O(1);
