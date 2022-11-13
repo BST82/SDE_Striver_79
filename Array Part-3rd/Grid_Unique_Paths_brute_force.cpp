@@ -14,7 +14,7 @@ public:
 };
 int main()
 {
-    Solution obj;
-    int totalCount= obj.uniquePaths(3,7);
+    Solution abc;
+    int totalCount= abc.uniquePaths(3,7);
     cout<<"The total number of Unique Paths are "<<totalCount<<endl;
 }
