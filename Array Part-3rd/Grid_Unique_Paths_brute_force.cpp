@@ -20,3 +20,6 @@ int main()
     int totalCount= abc.unique_path(n,m);
     cout<<"The total number of Unique Paths are "<<totalCount<<endl;
 }
+
+// TC : exponential;
+//SC : exponential;
